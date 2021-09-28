@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <script>
+         // 삼각형이 만들어지기 위한 조건 : 짧은 두 직선의 합이 반드시 가장 긴 직선보다 길어야 함
+         var input = prompt('100이하의 자연수 A,B,C 입력해주세요.');
+        
+         function triangle(input)
+         {
+            let maxValue = input.split(",");
+
+            let a = parseInt(maxValue[0]);
+            let b = parseInt(maxValue[1]);
+            let c = parseInt(maxValue[2]);
+            
+            let total = a + b + c;
+            let result;
+
+            if(a < b)
+                result = b;
+            else 
+                result = a;
+            if (result < c)
+                result = c;
+
+            if((total - result) >= result)
+                alert("YES");
+            else
+                alert("NO");
+         }
+        
+         triangle(input);
+    </script>
+</body>
+</html>
