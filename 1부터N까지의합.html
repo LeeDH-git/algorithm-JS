@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <script>
+         var input = prompt('20이하의 자연수 N을 입력해주세요.');
+        
+         function sum(input)
+         {
+            reuslt =  input*(input+1)/2;
+            alert(parseInt(reuslt));
+         }
+
+         /* or
+            let result = 0;
+            function sum(input)
+            {
+                for(i = 1 ; i < input ; i++)
+                {
+                    result = result + i;  
+                }
+            }
+        */
+
+         sum(input);
+    </script>
+</body>
+</html>
