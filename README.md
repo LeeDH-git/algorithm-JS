@@ -1,2 +1,2 @@
 algorithm-JS
-JS·Î ÇÏ´Â ¾Ë°í¸®Áò Ç®ÀÌ
+JSë¡œ í•˜ëŠ” ì•Œê³ ë¦¬ì¦˜ í’€ì´
