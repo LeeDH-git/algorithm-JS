@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <script>
+         var input = prompt('100이하의 자연수 A,B,C 입력해주세요.');
+        
+         function minMax(input)
+         {
+            let minValue = input.split(",");
+
+            let a = minValue[0];
+            let b = minValue[1];
+            let c = minValue[2];
+
+            let result;
+
+            if(a < b)
+                result = a;
+            else 
+                result = b;
+            if (c < result)
+                result = c;
+            
+            alert(result);
+         }
+        
+        minMax(input);
+    </script>
+</body>
+</html>
