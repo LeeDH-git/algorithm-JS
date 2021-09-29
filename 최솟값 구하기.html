@@ -10,19 +10,19 @@
             let indexMin,
                 temp;
 
-            for (i = 0; i < array.length - 1; i++) { // 처음부터 훑으면서
+            for (i = 0; i < array.length - 1; i++) { 
                 indexMin = i;
-                for (j = i + 1; j < array.length; j++) { // 최솟값의 위치를 찾음
+                for (j = i + 1; j < array.length; j++) { 
                     if (array[j] < array[indexMin]) {
                         indexMin = j;
                     }
                 }
-                temp = array[indexMin]; // 최솟값을 저장
+                temp = array[indexMin]; 
                 array[indexMin] = array[i];
-                array[i] = temp; // 최솟값을 제일 앞으로 보냄
+                array[i] = temp; 
             }
 
-            alert(array);
+            alert("최솟값 : " + array[0]);
         }
 
         var input = prompt('7개의 정수를 입력해주세요.', 'A,B,C,D,E,F,G');
