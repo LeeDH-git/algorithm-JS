@@ -15,20 +15,20 @@
                 temp;
 
             let oddNum = new Array();
+            let sum = 0;
 
             for (i = 0; i < array.length; i++) {
                 if (array[i] % 2 != 0) {
                     oddNum.push(array[i]);
+                    
+                    for (i = 0; i < oddNum.length; i++) {
+                        sum += oddNum[i];
+                    }
                 }
             }
 
-            let sum = 0;
+           
 
-            for (i = 0; i < oddNum.length; i++) {
-                sum += oddNum[i];
-            }
-
-            
             for (i = 0; i < oddNum.length - 1; i++) {
                 indexMin = i;
                 for (j = i + 1; j < oddNum.length; j++) {
@@ -41,10 +41,10 @@
                 oddNum[i] = temp;
             }
 
-            alert("홀수의 합 : "+ Number(sum) + "<br>" + "최솟값 : " + array[0] );
+            alert("홀수의 합 : " + Number(sum) + "\n최솟값 : " + array[0]);
         }
 
-        var input = prompt('7개의 정수를 입력해주세요.', 'A,B,C,D,E,F,G');
+        var input = prompt('정수를 입력해주세요.', 'A,B,C,D,E,F,G....');
 
         min(input);
     </script>
