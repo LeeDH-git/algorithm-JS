@@ -2,28 +2,25 @@
 <head></head>
 <body>
     <script>
-            function noCarDay(inputDay,inputCarNo)
-            {
-                let carNo = inputCarNo.split(" ");
-                let today = inputDay.charAt(inputDay.length-1);
-                
-                let carCnt = 0;
-                for(i = 0 ; i < carNo.length; i++)
-                {
-                    if(carNo[i].charAt(carNo[i].length-1) == today)
-                    {
-                        carCnt ++;
-                    }
+        function noCarDay(inputDay, inputCarNo) {
+            let carNo = inputCarNo.split(" ");
+            let today = inputDay.charAt(inputDay.length - 1);
+
+            let carCnt = 0;
+            for (i = 0; i < carNo.length; i++) {
+                if (carNo[i].charAt(carNo[i].length - 1) == today) {
+                    carCnt++;
                 }
-
-                alert("오늘 위반 차량 댓수 :" + carCnt +"대");
-
             }
 
-            var inputDay = prompt("오늘 날짜의 일을 입력해주세요.")
-            var inputCarNo = prompt("오늘 운행한 자동차 번호 끝 두자리를 입력해주세요.","AA BB CC DD EE ....")
+            alert("오늘 위반 차량 댓수 :" + carCnt + "대");
 
-            noCarDay(inputDay,inputCarNo);
+        }
+
+        var inputDay = prompt("오늘 날짜의 일을 입력해주세요.")
+        var inputCarNo = prompt("오늘 운행한 자동차 번호 끝 두자리를 입력해주세요.", "AA BB CC DD EE ....")
+
+        noCarDay(inputDay, inputCarNo);
     </script>
 </body>
 </html>
